@@ -13,7 +13,7 @@
 *	Name	:	Tank Rush 2
 *	Author	:	Phil Bradley
 *	Descrp	:	Spawns an endless amount of tanks.
-*	Version :	1.3.4.1
+*	Version :	1.3.4.2
 *	Link	:	psbj.github.io
 
 ========================================================================================
@@ -131,7 +131,7 @@
 #pragma semicolon 1
 
 // Define some strings so you do not have to type them out over and over
-#define VERSION				"1.3.4.1"
+#define VERSION				"1.3.4.2"
 #define PREFIX				"\x04[Tank Rush]\x03"
 #define DEBUG				"\x04[Debug Rush]\x03"
 #define BLACKLIST			"STEAM_1:1:7973543, STEAM_1:1:64627513, STEAM_1:0:28431790, STEAM_1:1:15379151, STEAM_1:1:6786756, STEAM_1:0:52246295, STEAM_1:1:1398596, STEAM_1:1:15629348, STEAM_1:1:26680294, STEAM_1:0:57102233, STEAM_1:1:21056792, STEAM_1:0:26747789"
@@ -270,7 +270,7 @@ public OnPluginStart()
 	g_hCollision						= CreateConVar("tr_collision",		"0",	"0 - Disable player collision, 1 - Enable player collision",																FCVAR_PLUGIN, true, 0.0, true, 1.0);
 	g_hIncapLimit						= CreateConVar("tr_incaplimit",		"4",	"Maximum number of incaps before a player becomes black and white",															FCVAR_PLUGIN, true, 0.0, true, 10.0);
 	g_hCoopStart						= CreateConVar("tr_coopstart",		"60",	"Time in seconds before tanks will spawn on coop mode",																		FCVAR_PLUGIN, true, 0.0, true, 180.0);
-	g_hDebug							= CreateConVar("tr_debug",			"0",	"Time in seconds before tanks will spawn on coop mode",																	FCVAR_PLUGIN, true, 0.0, true, 1.0);
+	g_hDebug							= CreateConVar("tr_debug",			"0",	"0 - Disable debug messages, 1 - Enable debug messages",																	FCVAR_PLUGIN, true, 0.0, true, 1.0);
 	
 	// Create the convar config file if it does not exist, else run the config file to change convars
 	AutoExecConfig(true, "tankrush2");
