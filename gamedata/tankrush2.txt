@@ -1,0 +1,59 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Offsets"
+		{
+			"oAbility"
+			{
+				"windows"	"928"
+				"linux"		"948"
+			}
+		}
+
+		"Signatures"
+		{
+			"BecomeGhost"
+			{
+				"library"	"server"
+				"linux"		"@_ZN13CTerrorPlayer11BecomeGhostEb"
+				"windows"	"\x55\x8B\xEC\x53\x8B\x5D\x2A\x56\x53\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x84"
+			}
+
+			"State_Transition"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CCSPlayer16State_TransitionE13CSPlayerState"
+				"windows"	"\x55\x8B\xEC\x56\x8B\xF1\x8B\x86\x2A\x2A\x2A\x2A\x57\x8B\x7D\x2A\x85\xC0\x74\x2A\x83"
+			}
+
+			"ZombieAbortControl"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8b\xec\x83\xec*\x56\x8b\xf1\xe8****\x83\xf8*\x0f\x85****\x8b\x06\x8b\x90***\x00\x8b\xce\xff\xd2\x84\xc0"
+				"linux"		"@_ZN13CTerrorPlayer24PlayerZombieAbortControlEv"
+			}
+
+			"SetClass"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8b\xec\x56\x8b\xf1\xe8****\x83\xf8*\x0f\x85****\xa1****\x40\xa3"
+				"linux"		"@_ZN13CTerrorPlayer8SetClassE15ZombieClassType"
+			}
+
+			"CreateAbility"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8b\xec\x83\xec*\x56\x8b\x75*\x85\xf6\x0f\x84****\x8b\xce\xe8"
+				"linux"		"@_ZN12CBaseAbility15CreateForPlayerEP13CTerrorPlayer"
+			}
+
+			"CTerrorPlayer_OnRevived"
+			{
+				"library"	"server"
+				"linux"		"@_ZN13CTerrorPlayer9OnRevivedEv"
+				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x53\x56\x8B\xF1\x8B\x06\x8B\x90\x2A\x2A\x2A\x2A\x57\xff\xd2\x84\xc0\x0f\x84\x2A\x2A\x2A\x2A\x8B\xCE"
+			}
+		}
+	}
+}
